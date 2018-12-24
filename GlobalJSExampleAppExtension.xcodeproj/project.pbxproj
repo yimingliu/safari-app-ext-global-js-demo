@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53679C4421D155B400FA7415 /* GlobalJSExampleAppExtension.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 53679C4321D155B400FA7415 /* GlobalJSExampleAppExtension.entitlements */; };
+		53679C4721D155B400FA7415 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53679C4621D155B400FA7415 /* AppDelegate.m */; };
+		53679C4A21D155B400FA7415 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53679C4821D155B400FA7415 /* Main.storyboard */; };
+		53679C4D21D155B400FA7415 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53679C4C21D155B400FA7415 /* ViewController.m */; };
+		53679C4F21D155B500FA7415 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53679C4E21D155B500FA7415 /* Assets.xcassets */; };
+		53679C5221D155B500FA7415 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53679C5121D155B500FA7415 /* main.m */; };
+		53679C5821D155B500FA7415 /* GlobalJSExampleAppExtension Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 53679C5721D155B500FA7415 /* GlobalJSExampleAppExtension Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		53679C5D21D155B500FA7415 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53679C5C21D155B500FA7415 /* Cocoa.framework */; };
+		53679C6121D155B500FA7415 /* SafariExtensionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 53679C6021D155B500FA7415 /* SafariExtensionHandler.m */; };
+		53679C6421D155B500FA7415 /* SafariExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53679C6321D155B500FA7415 /* SafariExtensionViewController.m */; };
+		53679C6721D155B500FA7415 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53679C6521D155B500FA7415 /* SafariExtensionViewController.xib */; };
+		53679C6A21D155B500FA7415 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 53679C6921D155B500FA7415 /* script.js */; };
+		53679C6C21D155B500FA7415 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 53679C6B21D155B500FA7415 /* ToolbarItemIcon.pdf */; };
+		53679C7A21D1590E00FA7415 /* GlobalConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 53679C7921D1590E00FA7415 /* GlobalConfig.m */; };
+		53679C7C21D15AA800FA7415 /* global.js in Resources */ = {isa = PBXBuildFile; fileRef = 53679C7B21D15AA800FA7415 /* global.js */; };
+		53679C7E21D15BA300FA7415 /* global.html in Resources */ = {isa = PBXBuildFile; fileRef = 53679C7D21D15BA300FA7415 /* global.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		53679C5921D155B500FA7415 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53679C3821D155B400FA7415 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53679C5621D155B500FA7415;
+			remoteInfo = "GlobalJSExampleAppExtension Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		53679C7321D155B500FA7415 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				53679C5821D155B500FA7415 /* GlobalJSExampleAppExtension Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		53679C4021D155B400FA7415 /* GlobalJSExampleAppExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlobalJSExampleAppExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53679C4321D155B400FA7415 /* GlobalJSExampleAppExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GlobalJSExampleAppExtension.entitlements; sourceTree = "<group>"; };
+		53679C4521D155B400FA7415 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		53679C4621D155B400FA7415 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		53679C4921D155B400FA7415 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		53679C4B21D155B400FA7415 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		53679C4C21D155B400FA7415 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		53679C4E21D155B500FA7415 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53679C5021D155B500FA7415 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53679C5121D155B500FA7415 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		53679C5721D155B500FA7415 /* GlobalJSExampleAppExtension Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GlobalJSExampleAppExtension Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53679C5C21D155B500FA7415 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		53679C5F21D155B500FA7415 /* SafariExtensionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafariExtensionHandler.h; sourceTree = "<group>"; };
+		53679C6021D155B500FA7415 /* SafariExtensionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariExtensionHandler.m; sourceTree = "<group>"; };
+		53679C6221D155B500FA7415 /* SafariExtensionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafariExtensionViewController.h; sourceTree = "<group>"; };
+		53679C6321D155B500FA7415 /* SafariExtensionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariExtensionViewController.m; sourceTree = "<group>"; };
+		53679C6621D155B500FA7415 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		53679C6821D155B500FA7415 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53679C6921D155B500FA7415 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		53679C6B21D155B500FA7415 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		53679C6D21D155B500FA7415 /* GlobalJSExampleAppExtension_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GlobalJSExampleAppExtension_Extension.entitlements; sourceTree = "<group>"; };
+		53679C7721D155FE00FA7415 /* GlobalJSExampleAppExtension Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "GlobalJSExampleAppExtension Extension.entitlements"; sourceTree = "<group>"; };
+		53679C7821D1590E00FA7415 /* GlobalConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalConfig.h; sourceTree = "<group>"; };
+		53679C7921D1590E00FA7415 /* GlobalConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalConfig.m; sourceTree = "<group>"; };
+		53679C7B21D15AA800FA7415 /* global.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = global.js; sourceTree = "<group>"; };
+		53679C7D21D15BA300FA7415 /* global.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = global.html; sourceTree = "<group>"; };
+		53679C7F21D1685900FA7415 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53679C3D21D155B400FA7415 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53679C5421D155B500FA7415 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53679C5D21D155B500FA7415 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53679C3721D155B400FA7415 = {
+			isa = PBXGroup;
+			children = (
+				53679C7F21D1685900FA7415 /* README.md */,
+				53679C4221D155B400FA7415 /* GlobalJSExampleAppExtension */,
+				53679C5E21D155B500FA7415 /* GlobalJSExampleAppExtension Extension */,
+				53679C5B21D155B500FA7415 /* Frameworks */,
+				53679C4121D155B400FA7415 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		53679C4121D155B400FA7415 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53679C4021D155B400FA7415 /* GlobalJSExampleAppExtension.app */,
+				53679C5721D155B500FA7415 /* GlobalJSExampleAppExtension Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53679C4221D155B400FA7415 /* GlobalJSExampleAppExtension */ = {
+			isa = PBXGroup;
+			children = (
+				53679C4321D155B400FA7415 /* GlobalJSExampleAppExtension.entitlements */,
+				53679C4521D155B400FA7415 /* AppDelegate.h */,
+				53679C4621D155B400FA7415 /* AppDelegate.m */,
+				53679C4821D155B400FA7415 /* Main.storyboard */,
+				53679C4B21D155B400FA7415 /* ViewController.h */,
+				53679C4C21D155B400FA7415 /* ViewController.m */,
+				53679C4E21D155B500FA7415 /* Assets.xcassets */,
+				53679C5021D155B500FA7415 /* Info.plist */,
+				53679C5121D155B500FA7415 /* main.m */,
+			);
+			path = GlobalJSExampleAppExtension;
+			sourceTree = "<group>";
+		};
+		53679C5B21D155B500FA7415 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53679C5C21D155B500FA7415 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53679C5E21D155B500FA7415 /* GlobalJSExampleAppExtension Extension */ = {
+			isa = PBXGroup;
+			children = (
+				53679C7721D155FE00FA7415 /* GlobalJSExampleAppExtension Extension.entitlements */,
+				53679C5F21D155B500FA7415 /* SafariExtensionHandler.h */,
+				53679C6021D155B500FA7415 /* SafariExtensionHandler.m */,
+				53679C6221D155B500FA7415 /* SafariExtensionViewController.h */,
+				53679C6321D155B500FA7415 /* SafariExtensionViewController.m */,
+				53679C6521D155B500FA7415 /* SafariExtensionViewController.xib */,
+				53679C6821D155B500FA7415 /* Info.plist */,
+				53679C6921D155B500FA7415 /* script.js */,
+				53679C6B21D155B500FA7415 /* ToolbarItemIcon.pdf */,
+				53679C6D21D155B500FA7415 /* GlobalJSExampleAppExtension_Extension.entitlements */,
+				53679C7821D1590E00FA7415 /* GlobalConfig.h */,
+				53679C7921D1590E00FA7415 /* GlobalConfig.m */,
+				53679C7B21D15AA800FA7415 /* global.js */,
+				53679C7D21D15BA300FA7415 /* global.html */,
+			);
+			path = "GlobalJSExampleAppExtension Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53679C3F21D155B400FA7415 /* GlobalJSExampleAppExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53679C7421D155B500FA7415 /* Build configuration list for PBXNativeTarget "GlobalJSExampleAppExtension" */;
+			buildPhases = (
+				53679C3C21D155B400FA7415 /* Sources */,
+				53679C3D21D155B400FA7415 /* Frameworks */,
+				53679C3E21D155B400FA7415 /* Resources */,
+				53679C7321D155B500FA7415 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53679C5A21D155B500FA7415 /* PBXTargetDependency */,
+			);
+			name = GlobalJSExampleAppExtension;
+			productName = GlobalJSExampleAppExtension;
+			productReference = 53679C4021D155B400FA7415 /* GlobalJSExampleAppExtension.app */;
+			productType = "com.apple.product-type.application";
+		};
+		53679C5621D155B500FA7415 /* GlobalJSExampleAppExtension Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53679C7021D155B500FA7415 /* Build configuration list for PBXNativeTarget "GlobalJSExampleAppExtension Extension" */;
+			buildPhases = (
+				53679C5321D155B500FA7415 /* Sources */,
+				53679C5421D155B500FA7415 /* Frameworks */,
+				53679C5521D155B500FA7415 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GlobalJSExampleAppExtension Extension";
+			productName = "GlobalJSExampleAppExtension Extension";
+			productReference = 53679C5721D155B500FA7415 /* GlobalJSExampleAppExtension Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53679C3821D155B400FA7415 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Yiming Liu";
+				TargetAttributes = {
+					53679C3F21D155B400FA7415 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					53679C5621D155B500FA7415 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 53679C3B21D155B400FA7415 /* Build configuration list for PBXProject "GlobalJSExampleAppExtension" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 53679C3721D155B400FA7415;
+			productRefGroup = 53679C4121D155B400FA7415 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53679C3F21D155B400FA7415 /* GlobalJSExampleAppExtension */,
+				53679C5621D155B500FA7415 /* GlobalJSExampleAppExtension Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53679C3E21D155B400FA7415 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53679C4421D155B400FA7415 /* GlobalJSExampleAppExtension.entitlements in Resources */,
+				53679C4F21D155B500FA7415 /* Assets.xcassets in Resources */,
+				53679C4A21D155B400FA7415 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53679C5521D155B500FA7415 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53679C6C21D155B500FA7415 /* ToolbarItemIcon.pdf in Resources */,
+				53679C7C21D15AA800FA7415 /* global.js in Resources */,
+				53679C6721D155B500FA7415 /* SafariExtensionViewController.xib in Resources */,
+				53679C6A21D155B500FA7415 /* script.js in Resources */,
+				53679C7E21D15BA300FA7415 /* global.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53679C3C21D155B400FA7415 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53679C4D21D155B400FA7415 /* ViewController.m in Sources */,
+				53679C5221D155B500FA7415 /* main.m in Sources */,
+				53679C4721D155B400FA7415 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53679C5321D155B500FA7415 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53679C6421D155B500FA7415 /* SafariExtensionViewController.m in Sources */,
+				53679C7A21D1590E00FA7415 /* GlobalConfig.m in Sources */,
+				53679C6121D155B500FA7415 /* SafariExtensionHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53679C5A21D155B500FA7415 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53679C5621D155B500FA7415 /* GlobalJSExampleAppExtension Extension */;
+			targetProxy = 53679C5921D155B500FA7415 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		53679C4821D155B400FA7415 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53679C4921D155B400FA7415 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		53679C6521D155B500FA7415 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53679C6621D155B500FA7415 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53679C6E21D155B500FA7415 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		53679C6F21D155B500FA7415 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		53679C7121D155B500FA7415 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "GlobalJSExampleAppExtension Extension/GlobalJSExampleAppExtension Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XLREUF5H62;
+				INFOPLIST_FILE = "GlobalJSExampleAppExtension Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yimingliu.GlobalJSExampleAppExtension-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		53679C7221D155B500FA7415 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "GlobalJSExampleAppExtension Extension/GlobalJSExampleAppExtension Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XLREUF5H62;
+				INFOPLIST_FILE = "GlobalJSExampleAppExtension Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yimingliu.GlobalJSExampleAppExtension-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		53679C7521D155B500FA7415 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GlobalJSExampleAppExtension/GlobalJSExampleAppExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XLREUF5H62;
+				INFOPLIST_FILE = GlobalJSExampleAppExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yimingliu.GlobalJSExampleAppExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		53679C7621D155B500FA7415 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GlobalJSExampleAppExtension/GlobalJSExampleAppExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XLREUF5H62;
+				INFOPLIST_FILE = GlobalJSExampleAppExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yimingliu.GlobalJSExampleAppExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53679C3B21D155B400FA7415 /* Build configuration list for PBXProject "GlobalJSExampleAppExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53679C6E21D155B500FA7415 /* Debug */,
+				53679C6F21D155B500FA7415 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53679C7021D155B500FA7415 /* Build configuration list for PBXNativeTarget "GlobalJSExampleAppExtension Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53679C7121D155B500FA7415 /* Debug */,
+				53679C7221D155B500FA7415 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53679C7421D155B500FA7415 /* Build configuration list for PBXNativeTarget "GlobalJSExampleAppExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53679C7521D155B500FA7415 /* Debug */,
+				53679C7621D155B500FA7415 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53679C3821D155B400FA7415 /* Project object */;
+}
